@@ -11,4 +11,11 @@ Python scripts visualise data from large 3D solar atmosphere simulations (simula
 **Contents:**
 
 - **figures** : Contains figures produced by pythons scripts in PDF format. The .pdf files have the same name as the scripts producing them (usually).
-- **files** : Some pickle files with data compiled from the .hdf5 files that would take too long to calculate each time. 
+- **files** : Some pickle files with useful derived (secondary) data (Mean integrated optical depth, mean pressure scale height, mean brightness/gas temperature difference).
+- **2DBslice.py, 2DTslice.py** : Produces figures showing vertical slices of magnetic field strength (B) and gas temperature (T), for all model atmospheres.
+- **2D_Bhist.py, 2D_Thist.py** : 2D histograms of vertical magnetic field strength stratification (B) and gas temperature stratification (T)
+- **ALMA_comp.py** : Comparing model data with ALMA observations.
+- **B_field_lines.py** : Vertical slice of magnetic field strength including field line visualisation.
+- **CF_time.py** : Evolution of contribution function over time (for a single column in the model atmosphere)
+- **SED_EMISSA_X.py**: Comparing calculated spectral energy distribution (SED) from model atmospheres with observed stellar SEDs compiled in connection with [EMISSA](https://www.mn.uio.no/rocs/english/projects/emissa/index.html) project.
+- 
