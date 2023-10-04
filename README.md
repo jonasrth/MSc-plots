@@ -17,7 +17,7 @@ Python scripts visualise data from large 3D solar atmosphere simulations (simula
 - **ALMA_comp.py** : Comparing model data with ALMA observations.
 - **B_field_lines.py** : Vertical slice of magnetic field strength including field line visualisation.
 - **CF_time.py** : Evolution of contribution function over time (for a single column in the model atmosphere)
-- **SED_EMISSA_X.py**: Comparing calculated spectral energy distribution (SED) from model atmospheres with observed stellar SEDs compiled in connection with [EMISSA](https://www.mn.uio.no/rocs/english/projects/emissa/index.html) project.
+- **SED_EMISSA_Sun/mag/plots.py**: Comparing calculated spectral energy distribution (SED) from model atmospheres with observed stellar SEDs compiled in connection with [EMISSA](https://www.mn.uio.no/rocs/english/projects/emissa/index.html) project.
 - **TR_dict.py** : Produces files/TR_dict.pkl, which contains mean optical depth as a function of height for all model atmospheres.
 - **T_hist_chsp.py** : Histograms of the gas temperature distribution in the chromospheres of the model atmospheres.
 - **Tb_vs_Tg.py** : Brightness temperature (Tb) vs. Gas temperature (Tg) scatter plots.
