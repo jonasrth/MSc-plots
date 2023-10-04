@@ -30,4 +30,11 @@ Python scripts visualise data from large 3D solar atmosphere simulations (simula
 - **int_img.py, int_imgs.py** : Plots intensity images from all the model atmospheres.
 - **material.py** : Sorts filenames of all relevant data files used in MSc project into dictionaries. Imported and used by most of the other python scripts to help collect the relevant data.
 - **mean_CF.py** : Plots mean contribution functions (CF) over entire horizontal extent of the simulations, as a function of height.
-- **obssun_sst1.py** : Solar observation by SST, used in MSc presentation.
+- **obssun_sst1.py** : Plots image of solar observation by SST.
+- **plot_params.py** : Plots model atmosphere parameters in surface gravity vs. effective temperature plot, next to stellar observations from EMISSA.
+- **t32_test.py** : Plots vertical slices of gas velocity magnitude for the coolest models (Effective temperature of 3200 K)
+- **temp_dens_B_strat.py** : Plots temperature, density, and magnetic field strength stratification
+- **time_quantity_Eklund.py** : Plots quantity (temperature, density, etc.) in a column as a function of time. Similar to plots showed in paper ([Eklund, H. 2021](https://ui.adsabs.harvard.edu/abs/2021RSPTA.37900185E/abstract)).
+- **val81c.py** : Plots traditional VAL (Vernazza, Avrett, Loeser) model of solar gas temperature- and density stratification.
+- **zt1_hist.py** : Histograms showing distribution of height of optical depth unity for a set of wavelengths from a single model atmosphere.
+- **zt1_hist_mag.py** : Histograms showing height of optical depth unity for a single wavelength, in model atmospheres with different initial magnetic field strength.
