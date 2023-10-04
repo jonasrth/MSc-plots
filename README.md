@@ -4,7 +4,7 @@
 
 ---
 
-Python scripts visualise data from large 3D solar atmosphere simulations (simulated by CO5BOLD), and data from radiative transfer calculations performed on these simulations (using [ART](https://github.com/SolarAlma/ART), Linfor3D, [RH 1.5D](https://github.com/ITA-Solar/rh)). The data was provided in HDF5 files, and is not publically available. The figures produced by the python scripts can be found in the "figures" folder.
+Python scripts visualise data from large 3D solar atmosphere simulations (simulated by CO5BOLD), and data from radiative transfer (RT) calculations performed on these simulations (using [ART](https://github.com/SolarAlma/ART), Linfor3D, [RH 1.5D](https://github.com/ITA-Solar/rh)). The data was provided in HDF5 files, and is not publically available. The figures produced by the python scripts can be found in the "figures" folder.
 
 ---
 
@@ -18,4 +18,16 @@ Python scripts visualise data from large 3D solar atmosphere simulations (simula
 - **B_field_lines.py** : Vertical slice of magnetic field strength including field line visualisation.
 - **CF_time.py** : Evolution of contribution function over time (for a single column in the model atmosphere)
 - **SED_EMISSA_X.py**: Comparing calculated spectral energy distribution (SED) from model atmospheres with observed stellar SEDs compiled in connection with [EMISSA](https://www.mn.uio.no/rocs/english/projects/emissa/index.html) project.
-- 
+- **TR_dict.py** : Produces files/TR_dict.pkl, which contains mean optical depth as a function of height for all model atmospheres.
+- **T_hist_chsp.py** : Histograms of the gas temperature distribution in the chromospheres of the model atmospheres.
+- **Tb_vs_Tg.py** : Brightness temperature (Tb) vs. Gas temperature (Tg) scatter plots.
+- **TbvsTg_contour.py** : Brightness temperature (Tb) vs. Gas temperature (Tg) contour plots.
+- **TgTb_error.py** : Plots showing difference between Tb and Tg for different wavelengths, for all the model atmospheres.
+- **Thist_chsp.py** : Old version of T_hist_chsp.py
+- **Tslice.py, TSlice_mag.py** : Old versions of 2DTSlice.py and 2DBSlice.py
+- **X_strat.py** : Plots stratification of variable X (density, pressure, temperature, etc.)
+- **codecomp_cf.py, codecomp_map.py** : Plots comparing contribution functions (CF) or brightness temperature maps from the different RT codes.
+- **int_img.py, int_imgs.py** : Plots intensity images from all the model atmospheres.
+- **material.py** : Sorts filenames of all relevant data files used in MSc project into dictionaries. Imported and used by most of the other python scripts to help collect the relevant data.
+- **mean_CF.py** : Plots mean contribution functions (CF) over entire horizontal extent of the simulations, as a function of height.
+- **obssun_sst1.py** : Solar observation by SST, used in MSc presentation.
