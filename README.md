@@ -8,3 +8,7 @@ Python scripts visualise data from large 3D solar atmosphere simulations (simula
 
 ---
 
+**Contents:**
+
+- **figures** : Contains figures produced by pythons scripts in PDF format. The .pdf files have the same name as the scripts producing them (usually).
+- **files** : Some pickle files with data compiled from the .hdf5 files that would take too long to calculate each time. 
