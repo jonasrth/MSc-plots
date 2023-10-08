@@ -4,7 +4,37 @@
 
 ---
 
-Python scripts visualise data from large 3D solar atmosphere simulations (simulated by CO5BOLD), and data from radiative transfer (RT) calculations performed on these simulations (using [ART](https://github.com/SolarAlma/ART), Linfor3D, [RH 1.5D](https://github.com/ITA-Solar/rh)). The data was provided in HDF5 files, and is not publically available. The figures produced by the python scripts can be found in the "figures" folder.
+***Data:***
+
+Python scripts visualise data from large 3D solar atmosphere simulations (simulated by CO5BOLD), and data from radiative transfer (RT) calculations performed on these simulations (using [ART](https://github.com/SolarAlma/ART), Linfor3D, [RH 1.5D](https://github.com/ITA-Solar/rh)). The data was provided in HDF5 files, and is not publically available. The figures produced by the python scripts can be found in the "figures" folder. Simulations had dimensions of (nx, ny, nz), where nx,ny,nz are the numbers of grid cells in horizontal (x,y) and vertical(nz) direction. Usually typical size around (500,500,300).
+
+Simulation data:
+- *ID {Dimension} : [unit] Description*
+- z {nz}     : [cm] Height of gridcells along z-axis
+- dx, dy {SCALAR} : [cm] Horisontal extent of one gridcell
+- Pgas {nx,ny,nz} : [dyn/cm^2] Gas pressure
+- dens {nx,ny,nz} : [g/cm^3] Mass density
+- xne {nx,ny,nz} : [1/cm^3] Electron number density
+- temperature {nx,ny,nz} : [K] Gas temperature
+- kappa {nx,ny,nz} : [1/cm] Mean Rosseland opacity
+- tau {nx, ny, nz} : [1] Mean Rosseland optical depth
+- bx, by, bz {nx,ny,nz} : [G] Magnetic field strength, in directions x,y, and z
+- vx, vy, vz {nx,ny,nz} : [cm/s] Bulk velocity, in directions x,y, and z
+
+Radiative transfer data, ART:
+- *ID {Dimension} : [unit] Description*
+- Stokes_I {1, nx, ny, nw}: [erg cm^(-2) s^(-1) st^(-1) Hz^(-1)] Calculated intensity
+- CFunc {1, nx, ny, nz} : [erg cm^(-3) s^(-1) st^(-1) Hz^(-1)] Contribution function (only calculated for one wavelength)
+- Tau1 {1, nx, ny, nw} : [cm] Height of optical depth unity
+- Wavelength {nw} : [angstrom] Wavelength for which the intensity was calculated
+
+Radiative transfer data, Linfor3D:
+- *ID {Dimension} : [unit] Description*
+- intensity {nx, ny} : [erg cm^(-2) s^(-1) st^(-1) angstrom^(-1)] Calculated intensity
+- contfunc {nx,ny,nz} : [erg cm^(-3) s^(-1) st^(-1) angstrom^(-1)] Contribution function
+- contfctz {nz} : [cm] Height scale of contribution function (z = 0 at height of Rosseland optical depth unity)
+- wavelength {1} : [angstrom] Wavelength for which the intensity was calculated
+
 
 ---
 
